@@ -3,8 +3,8 @@
 Сделать форк репозитория или же скачать проект с помощью команды:`git clone`
 
 Установить и активировать виртуальное окружение:
-`python -m venv venv
-source venv/Scripts/activate`
+`python -m venv venv`
+`source venv/Scripts/activate`
 
 Установить зависимости:
 `
