@@ -1,25 +1,30 @@
 ## Финальный проект API_YATUBE
 ### Установка
 Сделать форк репозитория или же скачать проект с помощью команды:
-```python 
-git clone```
+```sh 
+git clone
+```
 
 Установить и активировать виртуальное окружение:
-`python -m venv venv`
+```sh
+python -m venv venv`
+```
+```sh 
 `source venv/Scripts/activate`
+```
 
 Установить зависимости:
-`
+```sh 
 pip install -r requirements.txt
-`
+```
 
 Применить миграции:
-`
+```sh
 python manage.py migrate
-`
+```
 
 Перейти в корневую директорию проекта
 Запустить проект:
-`
+```sh
 python manage.py runserver
-`
+```
