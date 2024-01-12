@@ -51,10 +51,8 @@ class FollowViewSet(viewsets.ModelViewSet):
     filter_backends = (filters.SearchFilter,)
 
     def get_queryset(self):
-        follows = Follow.objects.select_related(
-            'following'
-        ).filter(user=self.request.user)
-        return follows
+        return Follow.objects.select_related('following'
+                                             ).filter(user=self.request.user)
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
