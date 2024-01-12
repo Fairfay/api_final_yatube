@@ -4,25 +4,21 @@
 ```sh 
 git clone
 ```
-
 Установить и активировать виртуальное окружение:
 ```sh
-python -m venv venv`
+python -m venv venv
 ```
 ```sh 
-`source venv/Scripts/activate`
+source venv/Scripts/activate
 ```
-
 Установить зависимости:
 ```sh 
 pip install -r requirements.txt
 ```
-
 Применить миграции:
 ```sh
 python manage.py migrate
 ```
-
 Перейти в корневую директорию проекта
 Запустить проект:
 ```sh
